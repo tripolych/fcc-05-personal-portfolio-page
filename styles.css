@@ -1,12 +1,8 @@
-/* import fonts */
-
 @import url('https://rsms.me/inter/inter.css');
 
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
-
-/* set box-sizing and page fonts */
 
 html {
   box-sizing: border-box;
@@ -20,8 +16,6 @@ html {
   box-sizing: inherit;
 }
 
-/* page */
-
 .page {
   display: flex;
   flex-direction: column;
@@ -31,8 +25,6 @@ html {
   background-color: #111b16;
 }
 
-/* wrapper */
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -41,12 +33,11 @@ html {
   max-width: 1366px;
 }
 
-/* navbar */
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 
   width: 100%;
   max-width: 1366px;
@@ -79,4 +70,48 @@ html {
 
 .navbar__link:active {
   color: #111b16;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  background-color: skyblue;
+}
+
+.welcome-section__title {
+  margin: 0 auto;
+  padding: 0;
+
+  color: #111b16;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.welcome-section__subtitle {
+  margin: 0 auto;
+  padding: 0;
+
+  color: #111b16;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
 }
