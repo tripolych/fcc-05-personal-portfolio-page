@@ -1,8 +1,12 @@
+/* import fonts */
+
 @import url('https://rsms.me/inter/inter.css');
 
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
+
+/* set box-sizing and page fonts */
 
 html {
   box-sizing: border-box;
@@ -14,4 +18,65 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+/* page */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  background-color: #111b16;
+}
+
+/* wrapper */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  max-width: 1366px;
+  padding: 2rem;
+}
+
+.navbar__items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__link {
+  color: skyblue;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.navbar__link:hover {
+  text-decoration: none;
+}
+
+.navbar__link:active {
+  color: #111b16;
 }
