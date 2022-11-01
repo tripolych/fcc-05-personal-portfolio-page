@@ -31,6 +31,7 @@ html {
   align-items: center;
   width: 100%;
   max-width: 1366px;
+  min-width: 320px;
 }
 
 .navbar {
@@ -65,6 +66,12 @@ html {
   font-size: 1rem;
   line-height: 1.5;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__link {
+    font-size: .75rem;
+  }
 }
 
 .navbar__link:hover {
@@ -104,6 +111,12 @@ html {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .welcome-section__title {
+    font-size: 3rem;
+  }
+}
+
 .welcome-section__subtitle {
   width: 40%;
   margin: 0 auto;
@@ -116,6 +129,12 @@ html {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-section__subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .projects {
@@ -138,8 +157,14 @@ html {
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
-  line-height: 1.5;
+  line-height: 1;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .projects__title {
+    font-size: 1.875rem;
+  }
 }
 
 .projects__items {
@@ -151,6 +176,12 @@ html {
   padding: 0;
 
   list-style-type: none;
+}
+
+@media screen and (max-width: 400px) {
+  .projects__items {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__item {
@@ -193,6 +224,12 @@ html {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .project__title {
+    font-size: .75rem;
+  }
+}
+
 .projects__other {
   width: 40%;
   min-height: 2.5rem;
@@ -210,6 +247,12 @@ html {
   border: 1px solid #fff;
 
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .projects__other {
+    font-size: .75rem;
+  }
 }
 
 .footer {
@@ -230,6 +273,12 @@ html {
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__text {
+    font-size: .75rem;
+  }
 }
 
 .footer__link {
